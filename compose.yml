@@ -1,10 +1,9 @@
-version: "3"
 services:
   lazytainer:
     container_name: lazytainer
     image: ghcr.io/vmorganp/lazytainer:master
     environment:
-      VERBOSE=false
+    - VERBOSE=false
     ports:
       - 25565:25565
       - "19132:19132/udp"
@@ -31,8 +30,6 @@ services:
       TZ: "Asia/Kolkata"
       DIFFICULTY: "2"
       VIEW_DISTANCE: "14"
-      ENABLE_WHITELIST: "true"
-      WHITELIST_FILE: "whitelist.json"
       EXISTING_WHITELIST_FILE: "SYNCHRONIZE"
       PLUGINS: |-
         https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.8/PAPER/deathchest.jar
@@ -52,6 +49,3 @@ services:
       - lazytainer
     network_mode: service:lazytainer
     restart: unless-stopped
-    volumes:
-      - ./data:/data
-

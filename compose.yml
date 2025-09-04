@@ -22,7 +22,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
-      MEMORY: "2560M"
+      MEMORY: "3072M"
       MAX_PLAYERS: "15"
       MOTD: "Goofy Ahh server. Thank Hetzner for cheap VPS."
       ONLINE_MODE: "false"

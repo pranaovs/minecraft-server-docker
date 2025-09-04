@@ -1,0 +1,35 @@
+services:
+  mc:
+    image: itzg/minecraft-server:latest
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+      - "19132:19132/udp"
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      MEMORY: "2560M"
+      MAX_PLAYERS: "15"
+      MOTD: "Goofy Ahh server. Thank Hetzner for cheap VPS."
+      ONLINE_MODE: "false"
+      USE_MEOWICE_FLAGS: "true"
+      TZ: "Asia/Kolkata"
+      DIFFICULTY: "2"
+      VIEW_DISTANCE: "14"
+      ENABLE_WHITELIST: "true"
+      WHITELIST_FILE: "whitelist.json"
+      EXISTING_WHITELIST_FILE: "SYNCHRONIZE"
+      PLUGINS: |-
+        https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.8/PAPER/deathchest.jar
+        https://hangarcdn.papermc.io/plugins/other/DirectionHUD/versions/1.8.1.2%2B1.21.7/PAPER/directionhud-paper-1.8.1.2%2B1.21.7.jar
+        https://hangarcdn.papermc.io/plugins/Black1_TV/Passky/versions/3.3.0/PAPER/Passky-3.3.0.jar
+        https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.4.2/PAPER/ViaVersion-5.4.2.jar
+        https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.4.2/PAPER/ViaBackwards-5.4.2.jar
+        https://download.geysermc.org/v2/projects/geyser/versions/2.8.3/builds/921/downloads/spigot
+      RCON_CMDS_STARTUP: |-
+        gamerule playersSleepingPercentage -1
+      ENABLE_ROLLING_LOGS: "true"
+    volumes:
+      - "./data:/data"
+

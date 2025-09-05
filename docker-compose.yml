@@ -37,6 +37,7 @@ services:
         https://hangarcdn.papermc.io/plugins/Black1_TV/Passky/versions/3.3.0/PAPER/Passky-3.3.0.jar
         https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.4.2/PAPER/ViaVersion-5.4.2.jar
         https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.4.2/PAPER/ViaBackwards-5.4.2.jar
+        https://download.geysermc.org/v2/projects/geyser/versions/2.8.3/builds/921/downloads/spigot
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage -1
     volumes:

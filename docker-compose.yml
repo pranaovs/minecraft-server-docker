@@ -38,6 +38,7 @@ services:
         https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.4.2/PAPER/ViaVersion-5.4.2.jar
         https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.4.2/PAPER/ViaBackwards-5.4.2.jar
         https://download.geysermc.org/v2/projects/geyser/versions/2.8.3/builds/921/downloads/spigot
+        https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
       RCON_CMDS_STARTUP: |-
         gamerule playersSleepingPercentage -1
     volumes:

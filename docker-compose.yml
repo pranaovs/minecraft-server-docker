@@ -1,51 +1,44 @@
 services:
-  lazytainer:
-    container_name: lazytainer
-    image: ghcr.io/vmorganp/lazytainer:master
-    environment:
-      VERBOSE: false
-    ports:
-    - 25565:25565
-    # - "19132:19132/udp"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-    labels:
-      - "lazytainer.group.minecraft.sleepMethod=stop"
-      - "lazytainer.group.minecraft.ports=25565"
-      - "lazytainer.group.minecraft.minPacketThreshold=2" # Start after two incomming packets
-      - "lazytainer.group.minecraft.inactiveTimeout=600" # 10 minutes, to allow the server to bootstrap. You can probably make this lower later if you want.
-    network_mode: bridge
-    restart: no
-  mc:
+  minecraft:
     image: itzg/minecraft-server:latest
-    # tty: true
-    # stdin_open: true
+    tty: true
+    stdin_open: true
+    container_name: minecraft-server
+    ports:
+      - "25565:25565"
+      - "19132:19132/udp"
+      - "19133:19133/udp"
+      - "24454:24454/udp"
+
     environment:
       EULA: "TRUE"
-      TYPE: "PAPER"
-      # MEMORY: "3072M"
-      MAX_PLAYERS: "15"
-      MOTD: "Goofy Ahh server. Thank Hetzner for cheap VPS."
+      TYPE: "FABRIC"
+      MAX_MEMORY: "4096M"
+      MOTD: "TEJAAAAS WORLD"
       ONLINE_MODE: "false"
+      USE_AIKAR_FLAGS: "true"
       USE_MEOWICE_FLAGS: "true"
       TZ: "Asia/Kolkata"
       DIFFICULTY: "2"
-      VIEW_DISTANCE: "14"
-      PLUGINS: |-
-        https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.8/PAPER/deathchest.jar
-        https://hangarcdn.papermc.io/plugins/other/DirectionHUD/versions/1.8.1.2%2B1.21.7/PAPER/directionhud-paper-1.8.1.2%2B1.21.7.jar
-        https://hangarcdn.papermc.io/plugins/Black1_TV/Passky/versions/3.3.0/PAPER/Passky-3.3.0.jar
-        https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.4.2/PAPER/ViaVersion-5.4.2.jar
-        https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.4.2/PAPER/ViaBackwards-5.4.2.jar
-        https://download.geysermc.org/v2/projects/geyser/versions/2.8.3/builds/921/downloads/spigot
-        https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
+      VIEW_DISTANCE: "32"
+      MODRINTH_PROJECTS: |-
+        ferrite-core
+        lithium
+        appleskin
+        simple-voice-chat
+        clumps
+        ore-harvester
+        tree-harvester
+        krypton
+        villager-names-serilum
+        rightclickharvest
+        easyauth
+      MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
+      ENFORCE_SECURE_PROFILE: "false"
       RCON_CMDS_STARTUP: |-
-        gamerule playersSleepingPercentage -1
+        gamerule playersSleepingPercentage 1
+      BUG_REPORT_LINK: "https://github.com/pranaovs/minecraft-server-docker"
+      LOG_TIMESTAMP: "true"
+
     volumes:
-      - "./data:/data"
-    labels:
-      - "lazytainer.group=minecraft"
-    depends_on:
-      - lazytainer
-    network_mode: service:lazytainer
-    restart: no
+      - "./data:/data:U"

@@ -33,6 +33,8 @@ services:
         villager-names-serilum
         rightclickharvest
         easyauth
+        your-items-are-safe
+        directionhud
       MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
       ENFORCE_SECURE_PROFILE: "false"
       RCON_CMDS_STARTUP: |-

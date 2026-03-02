@@ -44,7 +44,7 @@ services:
       BUG_REPORT_LINK: "https://github.com/pranaovs/minecraft-server-docker"
       LOG_TIMESTAMP: "true"
 
-    restart: unless-stopped
+    restart: always
 
     volumes:
       - "./data:/data:U"

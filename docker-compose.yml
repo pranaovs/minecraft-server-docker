@@ -13,7 +13,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "FABRIC"
-      MAX_MEMORY: "4096M"
+      MAX_MEMORY: "3G"
       MOTD: "TEJAAAAS WORLD"
       ONLINE_MODE: "false"
       USE_AIKAR_FLAGS: "true"

@@ -40,6 +40,12 @@ services:
         inventory-sorting
         skinrestorer
         no-dim
+
+        aquamirae
+        bosses-of-mass-destruction
+        illager-invasion
+        the-graveyard-fabric
+        formidulus
       MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
       ENFORCE_SECURE_PROFILE: "false"
       RCON_CMDS_STARTUP: |-

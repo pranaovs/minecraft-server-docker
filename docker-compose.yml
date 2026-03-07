@@ -41,11 +41,17 @@ services:
         skinrestorer
         no-dim
 
-        aquamirae
-        bosses-of-mass-destruction
+        flower-mimics
+        friends-and-foes
+        dungeons-and-taverns
+        oh-the-biomes-weve-gone
         illager-invasion
-        the-graveyard-fabric
-        formidulus
+        variants-and-ventures
+        enderscape
+        katters-structures
+        upgraded-mobs
+        server-side-horror
+
       MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
       ENFORCE_SECURE_PROFILE: "false"
       RCON_CMDS_STARTUP: |-

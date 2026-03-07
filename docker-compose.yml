@@ -40,17 +40,21 @@ services:
         inventory-sorting
         skinrestorer
         no-dim
+        badpackets
 
         flower-mimics
-        friends-and-foes
-        dungeons-and-taverns
-        oh-the-biomes-weve-gone
-        illager-invasion
-        variants-and-ventures
-        enderscape
-        katters-structures
+        universal-enchants
         upgraded-mobs
         server-side-horror
+        chunky
+        katters-structures
+
+        oh-the-biomes-weve-gone
+        enchantments-encore
+        more-armor-trims
+        enchantment-lore
+        dungeons-and-taverns
+        nullscape
 
       MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
       ENFORCE_SECURE_PROFILE: "false"

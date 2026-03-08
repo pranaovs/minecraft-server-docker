@@ -43,14 +43,11 @@ services:
         badpackets
 
         flower-mimics
-        universal-enchants
         upgraded-mobs
         server-side-horror
         chunky
         katters-structures
 
-        oh-the-biomes-weve-gone
-        enchantments-encore
         more-armor-trims
         enchantment-lore
         dungeons-and-taverns

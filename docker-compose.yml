@@ -51,7 +51,6 @@ services:
         more-armor-trims
         enchantment-lore
         dungeons-and-taverns
-        nullscape
 
       MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
       ENFORCE_SECURE_PROFILE: "false"

@@ -43,7 +43,6 @@ services:
         badpackets
 
         flower-mimics
-        upgraded-mobs
         server-side-horror
         chunky
         katters-structures

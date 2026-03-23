@@ -49,6 +49,7 @@ services:
         chunky
         katters-structures
         towns-and-towers
+        improved-happy-ghast
 
         more-armor-trims
         enchantment-lore

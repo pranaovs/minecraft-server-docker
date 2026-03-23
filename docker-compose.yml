@@ -48,6 +48,7 @@ services:
         flower-mimics
         chunky
         katters-structures
+        towns-and-towers
 
         more-armor-trims
         enchantment-lore

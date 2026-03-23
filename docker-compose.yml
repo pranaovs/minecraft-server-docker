@@ -46,7 +46,6 @@ services:
         map-distance-fix
 
         flower-mimics
-        server-side-horror
         chunky
         katters-structures
 

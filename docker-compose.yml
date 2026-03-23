@@ -43,6 +43,7 @@ services:
         skinrestorer
         no-dim
         badpackets
+        map-distance-fix
 
         flower-mimics
         server-side-horror

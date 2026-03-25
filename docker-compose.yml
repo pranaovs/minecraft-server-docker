@@ -42,7 +42,6 @@ services:
         your-items-are-safe
         c2me-fabric
         inventory-sorting
-        skinrestorer
         no-dim
         badpackets
         map-distance-fix

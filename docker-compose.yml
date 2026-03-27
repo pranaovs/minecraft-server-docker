@@ -45,7 +45,6 @@ services:
         fast-item-frames
 
         appleskin
-        unloaded-activity
         simple-voice-chat
         ore-harvester
         tree-harvester

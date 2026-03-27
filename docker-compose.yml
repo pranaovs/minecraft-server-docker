@@ -26,34 +26,44 @@ services:
       TZ: "Asia/Kolkata"
       DIFFICULTY: "2"
       VIEW_DISTANCE: "10"
-      SIMULATION_DISTANCE: "8"
+      SIMULATION_DISTANCE: "6"
       MODRINTH_PROJECTS: |-
-        ferrite-core
+
         lithium
-        appleskin
-        simple-voice-chat
+        krypton
         clumps
+        ferrite-core
+        c2me-fabric
+        alternate-current
+        badpackets
+        distanthorizons
+        servercore
+        scalablelux
+        tt20
+        noisiumforked
+        chunky
+        fast-item-frames
+
+        appleskin
+        unloaded-activity
+        simple-voice-chat
         ore-harvester
         tree-harvester
-        krypton
         villager-names-serilum
         rightclickharvest
         easyauth
         your-items-are-safe
-        c2me-fabric
         inventory-sorting
         no-dim
-        badpackets
         map-distance-fix
-
+        bookshelf-inspector
         flower-mimics
-        chunky
+        improved-happy-ghast
+        enchantment-lore
+
         katters-structures
         towns-and-towers
-        improved-happy-ghast
-
         more-armor-trims
-        enchantment-lore
         dungeons-and-taverns
 
       MODRINTH_DOWNLOAD_DEPENDENCIES: "required"

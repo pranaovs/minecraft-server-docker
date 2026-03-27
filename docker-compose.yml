@@ -36,7 +36,6 @@ services:
         c2me-fabric
         alternate-current
         badpackets
-        distanthorizons
         servercore
         scalablelux
         tt20

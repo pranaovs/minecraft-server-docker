@@ -17,7 +17,7 @@ services:
       TYPE: "FABRIC"
       VERSION: "1.21.11"
 
-      MAX_MEMORY: "4096M"
+      MAX_MEMORY: "3584M"
       MOTD: "TEJAAAAS WORLD"
       ONLINE_MODE: "false"
       ENABLE_QUERY: "true"

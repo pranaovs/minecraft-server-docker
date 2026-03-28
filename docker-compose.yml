@@ -25,7 +25,7 @@ services:
       USE_MEOWICE_FLAGS: "true"
       TZ: "Asia/Kolkata"
       DIFFICULTY: "2"
-      VIEW_DISTANCE: "8"
+      VIEW_DISTANCE: "10"
       SIMULATION_DISTANCE: "6"
       MODRINTH_PROJECTS: |-
 

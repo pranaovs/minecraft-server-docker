@@ -31,6 +31,7 @@ services:
 
         lithium
         krypton
+        clumps
         ferrite-core
         c2me-fabric
         alternate-current

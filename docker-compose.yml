@@ -41,6 +41,7 @@ services:
         noisiumforked
         chunky
         fast-item-frames
+        modernfix-mvus
 
         appleskin
         simple-voice-chat

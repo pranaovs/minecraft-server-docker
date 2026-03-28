@@ -59,7 +59,6 @@ services:
         flower-mimics
         improved-happy-ghast
         enchantment-lore
-        fake-afk
 
         katters-structures
         towns-and-towers

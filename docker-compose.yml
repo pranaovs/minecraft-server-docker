@@ -69,10 +69,11 @@ services:
       ENFORCE_SECURE_PROFILE: "false"
       RCON_CMDS_STARTUP: |-
         gamerule players_sleeping_percentage 1
-      RCON_CMDS_FIRST_CONNECT: |-
         chunky continue
-      RCON_CMDS_LAST_DISCONNECT: |-
+      RCON_CMDS_FIRST_CONNECT: |-
         chunky pause
+      RCON_CMDS_LAST_DISCONNECT: |-
+        chunky continue
       BUG_REPORT_LINK: "https://github.com/pranaovs/minecraft-server-docker"
       LOG_TIMESTAMP: "true"
 
